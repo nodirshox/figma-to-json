@@ -4,6 +4,7 @@
   "description": "Figma to JSON",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
-    "eslint": "^8.6.0"
+    "eslint": "^8.6.0",
+    "nodemon": "^2.0.15"
   }
 }
