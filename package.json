@@ -1,0 +1,32 @@
+{
+  "name": "figma-to-json",
+  "version": "1.0.0",
+  "description": "Figma to JSON",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodirshox/figma-to-json.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodirshox/figma-to-json/issues"
+  },
+  "homepage": "https://github.com/nodirshox/figma-to-json#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "winston": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "eslint": "^8.6.0",
+    "nodemon": "^2.0.15"
+  }
+}
