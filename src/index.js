@@ -3,7 +3,9 @@ const express = require('express');
 const { router } = require('./routers');
 const { CONFIG } = require('./config');
 const { logger } = require('./loaders/logger');
+
 const app = express();
+app.use(express.json());
 
 // middleware
 app.use(async function (req, res, next) {
