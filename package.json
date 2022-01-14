@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nodirshox/figma-to-json/issues"
   },
-  "homepage": "https://github.com/nodirshox/figma-to-json#readme"
+  "homepage": "https://github.com/nodirshox/figma-to-json#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
