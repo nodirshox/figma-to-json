@@ -10,13 +10,19 @@ Server is runs with 'Express' package. I used ['3 Layered Architecture'](https:/
 
 # Folders description
 
-src/config - storing default env variables
-src/data-access - intraction with writing file and upload to S3
-src/loaders - consisted of logger function and S3 client
-src/models - validation of client request model using Joi
-src/routers - HTTP Routers
-src/services - business logic
-src/utils - reusable functions
+ - src/config - storing default env variables
+ 
+ - src/data-access - intraction with writing file and upload to S3
+ 
+ - src/loaders - consisted of logger function and S3 client
+ 
+ - src/models - validation of client request model using Joi
+ 
+ - src/routers - HTTP Routers
+ 
+ - src/services - business logic
+ 
+ - src/utils - reusable functions
 
 # Endpoint
 
