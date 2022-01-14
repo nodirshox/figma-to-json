@@ -8,7 +8,7 @@ Server is runs with 'Express' package. I used ['3 Layered Architecture'](https:/
 - Business Logic Layer (store all logics here, no intraction with database)
 - Data Access Layer (all database queryies here)
 
-# Folders description:
+# Folders description
 
 src/config - storing default env variables
 src/data-access - intraction with writing file and upload to S3
@@ -42,7 +42,7 @@ src/utils - reusable functions
 
 # Notes
 
- - I used ['Minio'](https://min.io/) package as S3 object. It is exactly same as AWS S3. Currently, I don't have AWS account, so I used Minio localy.
+ - I used ['Minio'](https://min.io/) package as S3 object. It is exactly same as AWS S3. Currently, I don't have AWS account, so I used Minio locally.
 
 # Future improvements
 
