@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const { router } = require('./routers');
+const { CONFIG } = require('./config');
 const { logger } = require('./loaders/logger');
 const app = express();
 
@@ -17,7 +18,7 @@ app.use(function (err, res, res, next) {
     res.status(500).json({ message: "INTERNAL SERVER ERROR" });
 });
 
-const PORT = 3000;
+const PORT = parseInt(CONFIG.HTTP_PORT);
 app.listen(PORT, () => {
     logger.info(`App has started on http://localhost:${PORT}`);
 });
