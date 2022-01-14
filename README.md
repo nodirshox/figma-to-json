@@ -2,7 +2,7 @@
 
 # Architecture
 
-Server is runs with 'Express' package. I implemented ['3 Layered Architecture'](https://www.ecanarys.com/Blogs/ArticleID/76/3-Layered-Architecture).
+Server is runs with 'Express' package. I used ['3 Layered Architecture'](https://www.ecanarys.com/Blogs/ArticleID/76/3-Layered-Architecture) type for folders structure.
 
 - Presentation layer (should takes only request and response, no business logic here)
 - Business Logic Layer (store all logics here, no intraction with database)
@@ -21,12 +21,19 @@ src/utils - reusable functions
 # Endpoint
 
  - Takes Figma URL file and token and returns JSON file
+
  - URL - http://localhost:3000/api/v1/figma
+ 
  - Method - POST
+ 
  - Body: {
+ 
    "token": "string",
+ 
    "url": "string"
+ 
  }
+ 
  - Response: { "url": "http://s3.aws.com/file.json" }
 
 # Static files
