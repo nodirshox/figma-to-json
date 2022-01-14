@@ -13,12 +13,13 @@ exports.fetchData = {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          'X-FIGMA-TOKEN': token
+          'X-FIGMA-TOKEN': `${token}`
         }
       });
       const content = await response.buffer();
-      let fileName = uuidv4();
-      fileName += '.json';
+      const fileUUID = uuidv4();
+      const timestamp = Date.now().toString();
+      const fileName = `${timestamp}-${fileUUID}.json`;
       fs.writeFileSync(`./tempFiles/${fileName}`, content)
 
       return fileName;

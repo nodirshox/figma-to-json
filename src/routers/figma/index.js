@@ -10,7 +10,11 @@ router.post('/', validator.body(figmaRequestSchema), async (req, res, next) => {
         const requestDTO = req.body;
         const response = await figmaService.get(requestDTO);
 
-        return res.json({ response });    
+        if (!response) {
+            return res.status(400).json({ message: 'Invalid request' });
+        }
+
+        return res.json({ url: response });    
     } catch (error) {
         next(error);
     }
